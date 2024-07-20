@@ -4,23 +4,11 @@ import { Link } from 'react-router-dom'
 
 export default function Header() {
   return (
-    <Navbar fluid rounded className='border-b-2'>
-        <Navbar.Brand as={Link} href="https://flowbite-react.com">
-        <img src="/favicon.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-      <Navbar.Collapse>
-        <Navbar.Link href="#" active>
-          Home
-        </Navbar.Link>
-        <Navbar.Link as={Link} href="#">
-          About
-        </Navbar.Link>
-        <Navbar.Link href="#">Services</Navbar.Link>
-        <Navbar.Link href="#">Pricing</Navbar.Link>
-        <Navbar.Link href="#">Contact</Navbar.Link>
-      </Navbar.Collapse>
+    <Navbar className='border-b-2'>
+        <Link to="/" className='self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white'>
+          <span className='px-2 py-1 bg-gradient-to-r from-black to-red rounded-lg text-black'>WEB</span>
+          Blog
+        </Link>
     </Navbar>
   )
 }

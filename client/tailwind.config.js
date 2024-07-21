@@ -4,20 +4,23 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    flowbite.content()
   ],
   theme: {
     extend: {},
   },
-  plugins: [],
-}
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    // ...
-    flowbite.content(),
-  ],
   plugins: [
-    // ...
-    flowbite.plugin(),
+    flowbite.plugin()
   ],
-};
+}
+// /** @type {import('tailwindcss').Config} */
+// module.exports = {
+//   content: [
+//     // ...
+//     ,
+//   ],
+//   plugins: [
+//     // ...
+//     ,
+//   ],
+// };
